@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Layouting</title>
+  <title>Layouting CSS</title>
   <style>
-    .h2 {
+    h2 {
       text-align: center;
     }
     .container1 {
       display: flex;
       background: blue;
+      justify-content: space-between; /* supaya item menyebar */
+      gap: 4px;
     }
     p {
       border: 1px solid black;
@@ -18,19 +20,20 @@
       width: 50px;
       padding: 4px;
       background: white;
+      margin: 4px;
     }
     .container2 {
       display: flex;
       background: red;
-      justify-content: center;
+      justify-content: center; /* item di tengah */
       gap: 4px;
     }
     .container3 {
       display: flex;
       background: purple;
       height: 80px;
-      justify-content: center;
-      align-items: center;
+      justify-content: center; /* item horizontal tengah */
+      align-items: center;     /* item vertikal tengah */
       gap: 4px;
     }
     .halfdiv {
@@ -39,31 +42,35 @@
     }
     .yellow {
       background: yellow;
-      width: 100%;
+      width: 50%; /* setengah */
     }
     .green {
       background: green;
-      width: 100%;
-}
+      width: 50%; /* setengah */
+    }
   </style>
 </head>
 <body>
   <h2>Flexbox Layout</h2>
+
   <div class="container1">
     <p>Item 1</p>
     <p>Item 2</p>
     <p>Item 3</p>
   </div>
+
   <div class="container2">
     <p>Item 1</p>
     <p>Item 2</p>
     <p>Item 3</p>
   </div>
+
   <div class="container3">
     <p>Item 1</p>
     <p>Item 2</p>
     <p>Item 3</p>
   </div>
+
   <div class="halfdiv">
     <div class="yellow"></div>
     <div class="green"></div>
